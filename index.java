@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+class Pattern11{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of rows: ");
+        int rows=sc.nextInt();
+        int count =1;
+        for(int i=1;i<=rows;i++){
+            if(i>1 && i%2==1){
+                count =1;
+            }if(count ==0){
+                    count =1;
+                }else{
+                    count =0;
+                }
+            for(int j =0;j<i;j++){
+                System.out.print(count);
+                if(count ==0){
+                    count =1;
+                }else{
+                    count =0;
+                }
+            }
+            System.out.println();
+        }
+    }
+}
